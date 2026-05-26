@@ -31,7 +31,8 @@ Proyecto universitario de administración de tienda desarrollado con Laravel, Do
 
 ## Documentación
 
-- [Manual de Usuario](docs/manual-usuario.pdf)
+[Manual de Usuario](docs/manual-usuario.pdf)
+
 ## Instalación
 
 ```bash
