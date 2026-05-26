@@ -9,3 +9,12 @@ docker/mysql-data
 docker/postgres-data
 
 src/.env
+
+src/vendor/
+src/node_modules/
+
+src/storage/framework/cache/
+src/storage/framework/sessions/
+src/storage/framework/views/
+
+src/bootstrap/cache/
