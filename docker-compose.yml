@@ -1,0 +1,43 @@
+services:
+
+  app:
+    build:
+      context: ./docker/php
+    container_name: tienda_app
+    volumes:
+      - ./src:/var/www
+
+  queue:
+    build:
+      context: ./docker/php
+    container_name: tienda_queue
+    volumes:
+      - ./src:/var/www
+    depends_on:
+      - app
+      - db
+    working_dir: /var/www
+    command: php artisan queue:work --tries=3 --timeout=120
+
+  web:
+    image: nginx:latest
+    container_name: tienda_web
+    ports:
+      - "8000:80"
+    volumes:
+      - ./src:/var/www
+      - ./docker/nginx:/etc/nginx/conf.d
+    depends_on:
+      - app
+
+  db:
+    image: mysql:8
+    container_name: tienda_db
+    restart: always
+    environment:
+      MYSQL_DATABASE: tienda
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: tienda
+      MYSQL_PASSWORD: tienda
+    ports:
+      - "3307:3306"
