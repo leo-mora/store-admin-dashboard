@@ -29,10 +29,6 @@ Proyecto universitario de administración de tienda desarrollado con Laravel, Do
 ### Bitacora
 ![Login](screenshots/bitacora.png)
 
-## Documentación
-
-[Manual de Usuario](docs/manual-usuario.pdf)
-
 ## Instalación
 
 ```bash
