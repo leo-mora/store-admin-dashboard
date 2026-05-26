@@ -24,10 +24,10 @@ Proyecto universitario de administración de tienda desarrollado con Laravel, Do
 ![Dashboard](screenshots/image.png)
 
 ### Reportes
-![Inventario](screenshots/image copy.png)
+![Inventario](screenshots/reportes.png)
 
 ### Bitacora
-![Login](screenshots/image copy 2.png)
+![Login](screenshots/bitacora.png)
 
 ## Documentación
 
