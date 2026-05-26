@@ -18,7 +18,20 @@ Proyecto universitario de administración de tienda desarrollado con Laravel, Do
 - Panel administrativo
 - Login de usuarios
 - Reportes básicos
+## Capturas
 
+### Dashboard
+![Dashboard](screenshots/image.png)
+
+### Reportes
+![Inventario](screenshots/image copy.png)
+
+### Bitacora
+![Login](screenshots/image copy 2.png)
+
+## Documentación
+
+- [Manual de Usuario](docs/manual-usuario.pdf)
 ## Instalación
 
 ```bash
