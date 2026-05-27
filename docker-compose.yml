@@ -36,8 +36,8 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: tienda
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: tienda
-      MYSQL_PASSWORD: tienda
+      MYSQL_ROOT_PASSWORD: example_password
+      MYSQL_USER: example_user
+      MYSQL_PASSWORD: example_password
     ports:
       - "3307:3306"
